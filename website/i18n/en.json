@@ -18,8 +18,8 @@
         "title": "Fifth Document"
       },
       "install": {
-        "title": "Latin-ish",
-        "sidebar_label": "Example Page"
+        "title": "Setup trustbase client",
+        "sidebar_label": "Setup trustbase client"
       }
     },
     "links": {

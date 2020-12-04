@@ -1,29 +1,73 @@
 ---
 id: install
-title: Latin-ish
-sidebar_label: Example Page
+title: Setup trustbase client
+sidebar_label: Setup trustbase client
 ---
 
-Check the [documentation](https://docusaurus.io) for how to use Docusaurus.
+## Prerequisites
 
-## Lorem
+the first thing you will need to do is prepare the computer for Rust development - these steps will vary based
+on the computer's operating system. Once Rust is configured, you will use its toolchains to interact
+with Rust projects; the commands for Rust's toolchains will be the same for all supported,
+Unix-based operating systems..
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus elementum massa eget nulla aliquet sagittis. Proin odio tortor, vulputate ut odio in, ultrices ultricies augue. Cras ornare ultrices lorem malesuada iaculis. Etiam sit amet libero tempor, pulvinar mauris sed, sollicitudin sapien.
+### Rust Environment
 
-## Mauris In Code
+This guide uses [`rustup`](https://rustup.rs/) to help manage the Rust toolchain. First install and
+configure `rustup`:
 
+```bash
+# Install
+curl https://sh.rustup.rs -sSf | sh
+# Configure
+source ~/.cargo/env
 ```
-Mauris vestibulum ullamcorper nibh, ut semper purus pulvinar ut. Donec volutpat orci sit amet mauris malesuada, non pulvinar augue aliquam. Vestibulum ultricies at urna ut suscipit. Morbi iaculis, erat at imperdiet semper, ipsum nulla sodales erat, eget tincidunt justo dui quis justo. Pellentesque dictum bibendum diam at aliquet. Sed pulvinar, dolor quis finibus ornare, eros odio facilisis erat, eu rhoncus nunc dui sed ex. Nunc gravida dui massa, sed ornare arcu tincidunt sit amet. Maecenas efficitur sapien neque, a laoreet libero feugiat ut.
+
+Configure the Rust toolchain to default to the latest stable version:
+
+```bash
+rustup default stable
 ```
 
-## Nulla
+### WebAssembly Compilation
 
-Nulla facilisi. Maecenas sodales nec purus eget posuere. Sed sapien quam, pretium a risus in, porttitor dapibus erat. Sed sit amet fringilla ipsum, eget iaculis augue. Integer sollicitudin tortor quis ultricies aliquam. Suspendisse fringilla nunc in tellus cursus, at placerat tellus scelerisque. Sed tempus elit a sollicitudin rhoncus. Nulla facilisi. Morbi nec dolor dolor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras et aliquet lectus. Pellentesque sit amet eros nisi. Quisque ac sapien in sapien congue accumsan. Nullam in posuere ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Proin lacinia leo a nibh fringilla pharetra.
+TrustBase uses [WebAssembly](https://webassembly.org/) (Wasm) to produce portable blockchain
+runtimes. You will need to configure your Rust compiler to use
+[`nightly` builds](https://doc.rust-lang.org/book/appendix-07-nightly-rust.html) to allow you to
+compile TrustBase runtime code to the Wasm target.
 
-## Orci
+### Rust Nightly Toolchain
 
-Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin venenatis lectus dui, vel ultrices ante bibendum hendrerit. Aenean egestas feugiat dui id hendrerit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur in tellus laoreet, eleifend nunc id, viverra leo. Proin vulputate non dolor vel vulputate. Curabitur pretium lobortis felis, sit amet finibus lorem suscipit ut. Sed non mollis risus. Duis sagittis, mi in euismod tincidunt, nunc mauris vestibulum urna, at euismod est elit quis erat. Phasellus accumsan vitae neque eu placerat. In elementum arcu nec tellus imperdiet, eget maximus nulla sodales. Curabitur eu sapien eget nisl sodales fermentum.
+Developers building with TrustBase should use a specific Rust nightly version that is known to be
+compatible with the version of TrustBase they are using; this version will vary from project to
+project and different projects may use different mechanisms to communicate this version to
+developers. The TrustBase Node Template uses 
+an [init script](https://github.com/TrustBase/trustbase/blob/master/scripts/init.sh)
+and
+[Makefile](https://github.com/TrustBase/trustbase/blob/master/Makefile)
+to specify the Rust nightly version and encapsulate the following steps. Use Rustup to install the
+correct nightly:
 
-## Phasellus
+```bash
+rustup install nightly-<yyyy-MM-dd>
+```
 
-Phasellus pulvinar ex id commodo imperdiet. Praesent odio nibh, sollicitudin sit amet faucibus id, placerat at metus. Donec vitae eros vitae tortor hendrerit finibus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque vitae purus dolor. Duis suscipit ac nulla et finibus. Phasellus ac sem sed dui dictum gravida. Phasellus eleifend vestibulum facilisis. Integer pharetra nec enim vitae mattis. Duis auctor, lectus quis condimentum bibendum, nunc dolor aliquam massa, id bibendum orci velit quis magna. Ut volutpat nulla nunc, sed interdum magna condimentum non. Sed urna metus, scelerisque vitae consectetur a, feugiat quis magna. Donec dignissim ornare nisl, eget tempor risus malesuada quis.
+### Wasm Toolchain
+
+Now, configure the nightly version to work with the Wasm compilation target:
+
+```bash
+rustup target add wasm32-unknown-unknown --toolchain nightly-<yyyy-MM-dd>
+```
+
+### Specifying Nightly Version
+
+Use the `WASM_BUILD_TOOLCHAIN` environment variable to specify the Rust nightly version a TrustBase
+project should use for Wasm compilation:
+
+```bash
+WASM_BUILD_TOOLCHAIN=nightly-<yyyy-MM-dd> cargo build --release
+```
+
+Note that this only builds _the runtime_ with the specified nightly. The rest of project will be
+compiled with the default toolchain, i.e. the latest installed stable toolchain.
