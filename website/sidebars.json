@@ -1,6 +1,6 @@
 {
   "docs": {
-    "Getting Started": ["install"],
+    "Getting Started": ["install", "local-network"],
     "Build On TrustBase": ["build"],
     "SmartContract Development": ["contract"]
   },

@@ -20,6 +20,10 @@
       "install": {
         "title": "Setup TrustBase client",
         "sidebar_label": "Setup TrustBase client"
+      },
+      "local-network": {
+        "title": "Run a local trustbase network",
+        "sidebar_label": "local network"
       }
     },
     "links": {
