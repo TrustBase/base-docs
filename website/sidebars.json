@@ -1,0 +1,10 @@
+{
+  "docs": {
+    "Getting Started": ["install"],
+    "Build On TrustBase": ["build"],
+    "SmartContract Development": ["contract"]
+  },
+  "docs-other": {
+    "First Category": ["doc4", "doc5"]
+  }
+}
