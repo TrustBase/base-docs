@@ -1,7 +1,7 @@
 ---
 id: install
-title: Setup trustbase client
-sidebar_label: Setup trustbase client
+title: Setup TrustBase client
+sidebar_label: Setup TrustBase client
 ---
 
 ## Prerequisites
@@ -41,7 +41,7 @@ compile TrustBase runtime code to the Wasm target.
 Developers building with TrustBase should use a specific Rust nightly version that is known to be
 compatible with the version of TrustBase they are using; this version will vary from project to
 project and different projects may use different mechanisms to communicate this version to
-developers. The TrustBase Node Template uses 
+developers. The TrustBase Node Template uses
 an [init script](https://github.com/TrustBase/trustbase/blob/master/scripts/init.sh)
 and
 [Makefile](https://github.com/TrustBase/trustbase/blob/master/Makefile)
@@ -71,3 +71,27 @@ WASM_BUILD_TOOLCHAIN=nightly-<yyyy-MM-dd> cargo build --release
 
 Note that this only builds _the runtime_ with the specified nightly. The rest of project will be
 compiled with the default toolchain, i.e. the latest installed stable toolchain.
+
+## Compiling TrustBase client
+
+Once the prerequisites are installed, you can use Git to clone the TrustBase repo.
+
+1. Clone trustbase.
+
+   ```bash
+   	git clone https://github.com/TrustBase/trustbase
+   ```
+
+2. Initialize WebAssembly build environment
+
+   ```bash
+    ./scripts/init
+   ```
+
+3. Compile the client
+
+   ```bash
+   cargo build --release
+   ```
+
+The time required for the compilation step depends on the hardware you're using.

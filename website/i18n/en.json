@@ -18,8 +18,8 @@
         "title": "Fifth Document"
       },
       "install": {
-        "title": "Setup trustbase client",
-        "sidebar_label": "Setup trustbase client"
+        "title": "Setup TrustBase client",
+        "sidebar_label": "Setup TrustBase client"
       }
     },
     "links": {
