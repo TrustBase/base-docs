@@ -11,6 +11,10 @@
       "contract": {
         "title": "This is document number 3"
       },
+      "dev-node": {
+        "title": "Dev Node",
+        "sidebar_label": "Run in dev mode"
+      },
       "doc4": {
         "title": "Other Document"
       },
@@ -22,8 +26,12 @@
         "sidebar_label": "Setup TrustBase client"
       },
       "local-network": {
-        "title": "Run a local trustbase network",
-        "sidebar_label": "local network"
+        "title": "Local network",
+        "sidebar_label": "Run local network"
+      },
+      "trustbase-network": {
+        "title": "TrustBase networks",
+        "sidebar_label": "TrustBase networks"
       }
     },
     "links": {

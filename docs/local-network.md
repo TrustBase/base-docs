@@ -1,7 +1,7 @@
 ---
 id: local-network
-title: Run a local trustbase network
-sidebar_label: local network
+title: Local network
+sidebar_label: Run local network
 ---
 
 This section will show how to start a private trustbase network on your local
