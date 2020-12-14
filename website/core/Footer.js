@@ -96,13 +96,13 @@ class Footer extends React.Component {
         </section>
 
         <a
-          href="https://opensource.facebook.com/"
+          href="https://trustbase.network/"
           target="_blank"
           rel="noreferrer noopener"
           className="fbOpenSource">
           <img
             src={`${this.props.config.baseUrl}img/top-logo.png`}
-            alt="Facebook Open Source"
+            alt="TrustBase developer"
             width="223"
             height="65"
           />
