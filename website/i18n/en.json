@@ -6,7 +6,7 @@
     "tagline": "TrustBase documents",
     "docs": {
       "build": {
-        "title": "document number 2"
+        "title": "Deploy ERC20 on TrustBase"
       },
       "contract": {
         "title": "This is document number 3"
