@@ -13,6 +13,12 @@ This article will walk through the compiling and deployment process for an Ink s
 
 ## Contract development
 
+install [cargo contract](https://crates.io/crates/cargo-contract) and create a contract template.
+
+```
+cargo contract new hello
+```
+
 Testing an Ink smart contract can (and should) be done both off-chain and on-chain. The prior can be done via a tests module within the contract itself, and the latter on a local Substrate dev chain.
 
  A simple ERC-20 contract
@@ -167,13 +173,31 @@ Whereas a completely new blob of smart contract source code is deployed each tim
 we will deploy the smart contract use the `Polkadot JS Apps`, Go to `Developer` -> `Contracts` page.
 In the `Code` tab. If you have not yet deployed a contract onto your node, the Code tab will be the only one available.
 
+![idv](https://github.com/jizer/Document/blob/main/pic/upload.png?raw=true)
+
 + Ensure the deployment account is set and it will have a sufficient balance for us to deploy, instantiate and test the contract
 + Drag erc20.wasm onto the compiled contract WASM field
 + Optional: Amend the code bundle name value for a more human-friendly name
 + Drag metadata.json onto the contract ABI field
 + Set the maximum gas allowed to 500,000 to ensure that we supply enough gas to process the transaction
 
-Once configured, hit Deploy and then confirm once again. The transactions will take place and the contract will be deployed.
+Once configured, hit Upload and then confirm once again. The transactions will take place and the contract code will be deployed.
+
+now we can deploy the contract with the following steps.
+![idv](https://github.com/jizer/Document/blob/main/pic/deploy.png?raw=true)
+
++ Set the endowment value to 20,000 to ensure the new contract account is minted with some value. Like Ethereum contracts, Ink contracts are deployed to a separate address with their own unique AccountId and balance.
++ Again, set the maximum gas allowed to 200,000 to ensure that we supply enough gas for the transaction
++ Hit Deploy and confirm to carry out the transaction.
+
+Calling functions from deployed contract.
+
+![idv](https://github.com/jizer/Document/blob/main/pic/message.png?raw=true)
+
+Our final job is now to ensure that functions are working as expected. You will notice that all the pub(external) functions we defined in the contract are now available to call and test within the Token1 contract:
+
+![idv](https://github.com/jizer/Document/blob/main/pic/call.png?raw=true)
+
 
 
 ## The complete ERC20 code
