@@ -30,8 +30,8 @@
         "sidebar_label": "Run local network"
       },
       "trustbase-network": {
-        "title": "TrustBase networks",
-        "sidebar_label": "TrustBase networks"
+        "title": "Connect TrustBase testnet",
+        "sidebar_label": "Connect TrustBase testnet"
       }
     },
     "links": {
