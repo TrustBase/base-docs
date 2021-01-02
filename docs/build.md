@@ -168,12 +168,25 @@ Now that we have generated the Wasm binary from our source code , we want to dep
 
 Smart contract deployment on Trustbase chain is a little different than on traditional smart contract blockchains.
 
+
 Whereas a completely new blob of smart contract source code is deployed each time you push a contract on other platforms, Trustbase chain opts to optimize this behavior. For example, the standard ERC20 token has been deployed to Ethereum thousands of times, sometimes only with changes to the initial configuration (through the Solidity constructor function). Each of these instances take up space on the blockchain equivalent to the contract source code size, even though no code was actually changed.
+
+we can deploy smart contract by `Polkadot JS Apps` with this setting.
+```
+Go to `Setting` -> `Developer` page in `Polkadot JS Apps` will be set:
+
+{
+  "Address": "AccountId",
+  "LookupSource": "AccountId"
+}
+
+```
 
 we will deploy the smart contract use the `Polkadot JS Apps`, Go to `Developer` -> `Contracts` page.
 In the `Code` tab. If you have not yet deployed a contract onto your node, the Code tab will be the only one available.
 
 ![idv](https://github.com/jizer/Document/blob/main/pic/upload.png?raw=true)
+
 
 + Ensure the deployment account is set and it will have a sufficient balance for us to deploy, instantiate and test the contract
 + Drag erc20.wasm onto the compiled contract WASM field
