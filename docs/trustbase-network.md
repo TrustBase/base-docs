@@ -1,14 +1,14 @@
 ---
 id: trustbase-network
-title: Connect TrustBase testnet
-sidebar_label: Connect TrustBase testnet
+title: Connect TrustBase cc2 testnet
+sidebar_label: Connect TrustBase cc2 testnet
 ---
 
 ## TrustBase testnet
 
-At the present trustbase client supports network for `local` and `testnet`
+At the present trustbase client supports network for `local` and `cc2 testnet`
 
-### Connect to trustbase testnet
+### Connect to trustbase cc2 testnet
 
 Connect to the trustbase testnet, running:
 
@@ -46,3 +46,14 @@ connect to the URL that was provided as your local node.To manually configure Ap
 UI to connect to another node:
 
 Click on the top left network icon and set the custom endpoint is set to ws://127.0.0.1:9945.
+
+## Public rpc service
+
+Your can use the public rpc service endpoint of cc2 testnet:
+
+```
+wss://rpc.trustednodes.net
+```
+
+Connect ot  [PolkaJS UI] (https://polkadot.js.org/apps) with cc2-network, Open your web browser, navigate to
+https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Frpc.trustednodes.net

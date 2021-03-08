@@ -30,8 +30,8 @@
         "sidebar_label": "Run local network"
       },
       "trustbase-network": {
-        "title": "Connect TrustBase testnet",
-        "sidebar_label": "Connect TrustBase testnet"
+        "title": "Connect TrustBase cc2 testnet",
+        "sidebar_label": "Connect TrustBase cc2 testnet"
       }
     },
     "links": {
@@ -39,7 +39,7 @@
       "Help": "Help"
     },
     "categories": {
-      "Getting Started": "Getting Started",
+      "TrustBase Getting Started": "TrustBase Getting Started",
       "Build DApp On TrustBase": "Build DApp On TrustBase",
       "SmartContract Development": "SmartContract Development",
       "First Category": "First Category"

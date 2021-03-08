@@ -1,6 +1,6 @@
 {
   "docs": {
-    "Getting Started": ["install", "dev-node", "local-network", "trustbase-network"],
+    "TrustBase Getting Started": ["install", "dev-node", "trustbase-network"],
     "Build DApp On TrustBase": ["build"],
     "SmartContract Development": []
   },

@@ -14,6 +14,8 @@ You should already have
 compiled on your computer.
 If you do not, please refer to [install guide](install.md).
 
+You can also use the [pre-built binary](https://github.com/TrustBase/trustbase/releases/tag/v0.2.0)
+
 ## Start local chain
 
 Before we generate our own keys, and start a truly unique Substrate network, we can
