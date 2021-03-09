@@ -1,7 +1,22 @@
 {
   "docs": {
     "TrustBase Getting Started": ["install", "dev-node", "trustbase-network"],
-    "Build DApp On TrustBase": ["build"],
+    "Build DApp On TrustBase": [
+      {
+        "type": "subcategory",
+        "label": "ERC20 contract with ink!",
+        "ids": [
+          "build"
+        ]
+      },
+      {
+        "type": "subcategory",
+        "label": "subscript ERC20 contract ",
+        "ids": [
+          "erc20-subscript"
+        ]
+      }
+    ],
     "SmartContract Development": []
   },
   "docs-other": {

@@ -15,6 +15,10 @@
         "title": "Dev Node",
         "sidebar_label": "Run in dev mode"
       },
+      "erc20-subscript": {
+        "title": "subscript erc20",
+        "sidebar_label": "ERC20 contract with subscript"
+      },
       "doc4": {
         "title": "Other Document"
       },
