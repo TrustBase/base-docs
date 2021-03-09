@@ -44,28 +44,28 @@ Whereas a completely new blob of smart contract source code is deployed each tim
 we will deploy the smart contract use the `Polkadot JS Apps`, Go to `Developer` -> `Contracts` page.
 In the `Code` tab. If you have not yet deployed a contract onto your node, the Code tab will be the only one available.
 
-![idv](https://github.com/jizer/Document/blob/main/pic/upload.png?raw=true)
+![contract-tab](assets/js-contract-tab.png)
 
 
 + Ensure the deployment account is set and it will have a sufficient balance for us to deploy, instantiate and test the contract
-+ Drag erc20.wasm onto the compiled contract WASM field
-+ Optional: Amend the code bundle name value for a more human-friendly name
-+ Drag metadata.json onto the contract ABI field
-+ Set the maximum gas allowed to 500,000 to ensure that we supply enough gas to process the transaction
++ click the `Upload & deploy code` button, upload erc20.contract from build target directory.
++ Set the initialSupply to 1000000, endowment to 1000
 
-Once configured, hit Upload and then confirm once again. The transactions will take place and the contract code will be deployed.
+![contract-deploy](assets/js-contract-deploy.png)
 
-now we can deploy the contract with the following steps.
-![idv](https://github.com/jizer/Document/blob/main/pic/deploy.png?raw=true)
+Once configured, hit deploy button, sign and Submit the transaction. The transactions will take place and the contract code will be deployed.
+![contract-list](assets/js-contract-address.png)
 
-+ Set the endowment value to 20,000 to ensure the new contract account is minted with some value. Like Ethereum contracts, Ink contracts are deployed to a separate address with their own unique AccountId and balance.
-+ Again, set the maximum gas allowed to 200,000 to ensure that we supply enough gas for the transaction
-+ Hit Deploy and confirm to carry out the transaction.
+## Call transfer method
 
-Calling functions from deployed contract.
+![contract-method](assets/js-contract-method.png)
 
-![idv](https://github.com/jizer/Document/blob/main/pic/message.png?raw=true)
+Click the `exec` button of `transfer` method.
 
-Our final job is now to ensure that functions are working as expected. You will notice that all the pub(external) functions we defined in the contract are now available to call and test within the Token1 contract:
+Specify the fields of the `transfer` dialog.
 
-![idv](https://github.com/jizer/Document/blob/main/pic/call.png?raw=true)
+* Call from Account
+* to Account
+* Value
+
+![contract-list](assets/js-contract-transfer.png)
