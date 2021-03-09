@@ -34,7 +34,7 @@ target
 
 ## Pre-build contract
 
-You can use the [pre-built erc20 download](https://github.com/TrustBase/trusted-contracts/releases/download/v0.1.0/erc20.contract) to deploy your contract.
+You can also use the pre-built [erc20 download](https://github.com/TrustBase/trusted-contracts/releases/download/v0.1.0/erc20.contract) to deploy your contract.
 
 ## Deploying Your Contract
 
@@ -57,7 +57,7 @@ In the `Code` tab. If you have not yet deployed a contract onto your node, the C
 
 ![contract-deploy](assets/js-contract-deploy.png)
 
-Once configured, hit deploy button, sign and Submit the transaction. The transactions will take place and the contract code will be deployed.
+Once configured, hit `deploy` button, then sign and submit the transaction. The transactions will take place and the contract code will be deployed.
 ![contract-list](assets/js-contract-address.png)
 
 ## Call transfer method
