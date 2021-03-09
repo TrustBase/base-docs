@@ -1,5 +1,5 @@
 ---
-id: build
+id: build-ink-erc20
 title: Deploy ERC20 on TrustBase
 ---
 

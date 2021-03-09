@@ -5,7 +5,7 @@
     "previous": "Previous",
     "tagline": "TrustBase documents",
     "docs": {
-      "build": {
+      "build-ink-erc20": {
         "title": "Deploy ERC20 on TrustBase"
       },
       "contract": {
