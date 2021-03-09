@@ -32,6 +32,10 @@ target
 └── erc20.contract
 ```
 
+## Pre-build contract
+
+You can use the [pre-built erc20 download](https://github.com/TrustBase/trusted-contracts/releases/download/v0.1.0/erc20.contract) to deploy your contract.
+
 ## Deploying Your Contract
 
 Now that we have generated the Wasm binary from our source code , we want to deploy this contract onto Trustbase chain.
