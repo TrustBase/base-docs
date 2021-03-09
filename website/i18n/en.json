@@ -6,7 +6,7 @@
     "tagline": "TrustBase documents",
     "docs": {
       "build-ink-erc20": {
-        "title": "Deploy ERC20 on TrustBase"
+        "title": "Build ERC20 on TrustBase"
       },
       "contract": {
         "title": "This is document number 3"
@@ -32,6 +32,9 @@
       "local-network": {
         "title": "Local network",
         "sidebar_label": "Run local network"
+      },
+      "setup-ink-dev": {
+        "title": "Setup ink! environment"
       },
       "trustbase-network": {
         "title": "Connect TrustBase cc2 testnet",

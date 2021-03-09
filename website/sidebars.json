@@ -6,6 +6,7 @@
         "type": "subcategory",
         "label": "ERC20 contract with ink!",
         "ids": [
+          "setup-ink-dev",
           "build-ink-erc20"
         ]
       },
