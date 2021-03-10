@@ -1,7 +1,7 @@
 ---
 id: trustbase-network
-title: Connect TrustBase cc2 testnet
-sidebar_label: Connect TrustBase cc2 testnet
+title: Connect TrustBase CC2 testnet
+sidebar_label: Connect TrustBase CC2 testnet
 ---
 
 ## TrustBase testnet
