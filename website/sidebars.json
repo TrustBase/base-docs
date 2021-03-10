@@ -14,7 +14,8 @@
         "type": "subcategory",
         "label": "subscript ERC20 contract ",
         "ids": [
-          "erc20-subscript"
+          "subscript-lib",
+          "subscript-erc20"
         ]
       }
     ],

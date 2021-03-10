@@ -1,10 +1,8 @@
 ---
-id: erc20-subscript
-title: subscript erc20
-sidebar_label: ERC20 contract with subscript
+id: subscript-lib
+title: subscript library
+sidebar_label: Using subscript library
 ---
-
-This section will show how to build erc20 contract with subscript on trustbase.
 
 ## Subscript library
 

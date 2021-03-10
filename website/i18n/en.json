@@ -15,10 +15,6 @@
         "title": "Dev Node",
         "sidebar_label": "Run in dev mode"
       },
-      "erc20-subscript": {
-        "title": "subscript erc20",
-        "sidebar_label": "ERC20 contract with subscript"
-      },
       "doc4": {
         "title": "Other Document"
       },
@@ -35,6 +31,14 @@
       },
       "setup-ink-dev": {
         "title": "Setup ink! environment"
+      },
+      "subscript-erc20": {
+        "title": "build erc20 contract with subscript",
+        "sidebar_label": "Subscript ERC20 contract"
+      },
+      "subscript-lib": {
+        "title": "subscript library",
+        "sidebar_label": "Using subscript library"
       },
       "trustbase-network": {
         "title": "Connect TrustBase CC2 testnet",
