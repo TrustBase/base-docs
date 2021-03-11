@@ -23,7 +23,8 @@
       "contract-wasm",
       "contract-pallet",
       "contract-transaction",
-      "subscript-startup"
+      "subscript-startup",
+      "subscript-layout"
     ]
   },
   "docs-other": {

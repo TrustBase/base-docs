@@ -48,6 +48,10 @@
         "title": "build erc20 contract with subscript",
         "sidebar_label": "Subscript ERC20 contract"
       },
+      "subscript-layout": {
+        "title": "Layout of subscript contract",
+        "sidebar_label": "Layout of subscript contract"
+      },
       "subscript-lib": {
         "title": "subscript library",
         "sidebar_label": "Using subscript library"
