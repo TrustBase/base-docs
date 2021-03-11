@@ -44,6 +44,10 @@
       "setup-ink-dev": {
         "title": "Setup ink! environment"
       },
+      "subscript-core": {
+        "title": "Subscript Core lib",
+        "sidebar_label": "Subscript Core lib"
+      },
       "subscript-erc20": {
         "title": "build erc20 contract with subscript",
         "sidebar_label": "Subscript ERC20 contract"
