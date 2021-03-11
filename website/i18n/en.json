@@ -12,6 +12,10 @@
         "title": "Get started contract runtime",
         "sidebar_label": "Contract Runtime"
       },
+      "contract-transaction": {
+        "title": "Detail of Contract Transaction",
+        "sidebar_label": "Contract Transaction"
+      },
       "contract-wasm": {
         "title": "Get started with wasm contract",
         "sidebar_label": "Introduction to wasm contract"
@@ -47,6 +51,10 @@
       "subscript-lib": {
         "title": "subscript library",
         "sidebar_label": "Using subscript library"
+      },
+      "subscript-startup": {
+        "title": "Get started with subscript",
+        "sidebar_label": "Get started with subscript"
       },
       "trustbase-network": {
         "title": "Connect TrustBase CC2 testnet",

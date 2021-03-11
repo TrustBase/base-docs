@@ -21,7 +21,9 @@
     ],
     "SmartContract Development": [
       "contract-wasm",
-      "contract-pallet"
+      "contract-pallet",
+      "contract-transaction",
+      "subscript-startup"
     ]
   },
   "docs-other": {
