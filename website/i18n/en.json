@@ -8,6 +8,10 @@
       "build-ink-erc20": {
         "title": "Build ERC20 on TrustBase"
       },
+      "contract-pallet": {
+        "title": "Get started contract runtime",
+        "sidebar_label": "Contract Runtime"
+      },
       "contract-wasm": {
         "title": "Get started with wasm contract",
         "sidebar_label": "Introduction to wasm contract"

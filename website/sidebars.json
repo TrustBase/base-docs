@@ -20,7 +20,8 @@
       }
     ],
     "SmartContract Development": [
-      "contract-wasm"
+      "contract-wasm",
+      "contract-pallet"
     ]
   },
   "docs-other": {
