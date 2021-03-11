@@ -60,6 +60,10 @@
         "title": "Get started with subscript",
         "sidebar_label": "Get started with subscript"
       },
+      "subscript-syntax": {
+        "title": "Subscript syntax",
+        "sidebar_label": "Subscript contract syntax"
+      },
       "trustbase-network": {
         "title": "Connect TrustBase CC2 testnet",
         "sidebar_label": "Connect TrustBase CC2 testnet"

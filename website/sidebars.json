@@ -24,7 +24,8 @@
       "contract-pallet",
       "contract-transaction",
       "subscript-startup",
-      "subscript-layout"
+      "subscript-layout",
+      "subscript-syntax"
     ]
   },
   "docs-other": {

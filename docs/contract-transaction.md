@@ -64,7 +64,7 @@ The contract call data is encoded in the calldata of substrate extrinsic with `S
 
 The inner contract data of extrinsic:
 
-getInput ⇒ [selector, param1, param2, param3, ...paramN]
+calldata ⇒ [selector, param1, param2, param3, ...paramN]
 
 selector ⇒ hash(function)
 
